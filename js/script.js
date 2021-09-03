@@ -156,8 +156,20 @@
 
 })(jQuery);
 
-function acao() {
-    let modal = document.querySelector('.modal-pop')
+    /* function iniciaModal(modalID) {
+        const modal = document.getElementById(modalID);
+        if(modal) {
+            modal.classList.add('mostrar');
+            modal.addEventListener('click', (e) => {
+                if(e.target.id == modalID || e.target.className == 'fecharX') {
+                modal.classList.remove('mostrar');  
+            }  
+            });
+    }
+    }
 
-    modal.style.display = 'block';
-}
+    const botao = document.querySelector('.btn-pop');
+    botao.addEventListener('click', () => iniciaModal('livro1')); */
+    
+
+    

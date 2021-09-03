@@ -1137,7 +1137,7 @@ blockquote {
 /* outra parte aqui */
 
 @media (max-width:800px) {
-  .page-title-alt .bg-shape-6 {
+  .page-title-alt .bg-shape-6{
     display:none;
   }
 }
@@ -1149,47 +1149,3 @@ blockquote {
 } 
 
 /* Social media icons */
-
-
-/*Pop Up*/
-
-.btn-pop {
-  font-size: 22px;
-  font-family: "Playfair Display", serif;
-  text-transform: capitalize;
-  padding: 16px 44px;
-  border-radius: 5px;
-  font-weight: 600;
-  border: 0;
-  position: relative;
-  z-index: 1;
-  transition: .2s ease;
-  background: #B3093F;
-  color: #fff;
-}
-
-.modal-pop {
-  width: 500px;
-  height: 500px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  display: none;
-  z-index: 100;
-  animation: animacao;
-  animation-duration: 800ms;
-}
-
-@keyframes animacao{
-
-  from{opacity: 1;}
-
-  from{opacity: 0;}
-}
-
-.fechar-pop {
-  width: 30px;
-  height: 30pc;
-}
