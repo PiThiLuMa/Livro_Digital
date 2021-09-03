@@ -52,7 +52,7 @@ p{
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: #fff;
+	background-color: #fff; 
 	box-sizing: border-box;
 	padding: 0 13px;
 	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
@@ -67,6 +67,7 @@ p{
 	transform: rotateY(180deg);
 	backface-visibility: hidden;
 	background: #000;
+	background-color: #fff;
 }
 .next-btn{
 	position: absolute;
@@ -80,7 +81,7 @@ p{
 	bottom: 13px;
 	right: 13px;
 	cursor: pointer;
-	color: #fff;
+	color: black;
 }
 #p1{
 	z-index: 3;
