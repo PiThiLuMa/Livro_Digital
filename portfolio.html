@@ -70,9 +70,7 @@
   <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
   <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
   <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
   <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
-  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
 </section>
 <!-- /page title -->
 
@@ -103,20 +101,17 @@
           <img src="images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-                <a  onclick="acao()" class="btn-pop btn-light btn-sm">Ler conto</a>
+              <a class="btn-pop btn-light btn-sm" href="contos/conto1.html">Ler conto</a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-pop">
-        <div onclick="fechar()" class="fechar-pop"></div>
       </div>
       <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
         <div class="position-relative rounded hover-wrapper">
           <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn-pop btn-light btn-sm" href="project-single.html">Ler conto</a>
+              <a class="btn-pop btn-light btn-sm">Ler conto</a>
             </div>
           </div>
         </div>
@@ -126,7 +121,7 @@
           <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn-pop btn-light btn-sm" href="project-single.html">Ler conto</a>
+              <a class="btn-pop btn-light btn-sm">Ler conto</a>
             </div>
           </div>
         </div>
@@ -136,7 +131,7 @@
           <img src="images/portfolio/item-8.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn-pop btn-light btn-sm" href="project-single.html">Ler conto</a>
+              <a class="btn-pop btn-light btn-sm">Ler conto</a>
             </div>
           </div>
         </div>
@@ -146,7 +141,7 @@
           <img src="images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn-pop btn-light btn-sm" href="project-single.html">Ler conto</a>
+              <a class="btn-pop btn-light btn-sm">Ler conto</a>
             </div>
           </div>
         </div>
@@ -156,7 +151,7 @@
           <img src="images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn-pop btn-light btn-sm" href="project-single.html">Ler conto</a>
+              <a class="btn-pop btn-light btn-sm">Ler conto</a>
             </div>
           </div>
         </div>
@@ -166,7 +161,7 @@
           <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn-pop btn-light btn-sm" href="project-single.html">Ler conto</a>
+              <a class="btn-pop btn-light btn-sm">Ler conto</a>
             </div>
           </div>
         </div>
@@ -176,7 +171,7 @@
           <img src="images/portfolio/item-7.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn-pop btn-light btn-sm" href="project-single.html">Ler conto</a>
+              <a class="btn-pop btn-light btn-sm">Ler conto</a>
             </div>
           </div>
         </div>
@@ -223,6 +218,74 @@
   </div>
 </section>
 <!-- /clients -->
+
+<style>
+  .modal-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1029;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-container.mostrar {
+    display: flex;
+  }
+
+  .modal-pop{
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid #451531;
+    box-shadow: 0 0 0 10px white;
+    position: relative;
+  }
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translate3D(0, -60px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3D(0, 0, 0);
+    }
+  }
+
+  .mostrar .modal-pop {
+    animation: aparecer .3s;
+  }
+
+  .fecharX {
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #451531;
+    color: white;
+    font-family: Arial, monospace;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+  }
+</style>
+
+<div id="livro1" class="modal-container">
+  <div class="modal-pop">
+    <button class="fecharX">x</button>
+    
+  </div>
+</div>
 
 <!-- contact -->
 <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
@@ -283,7 +346,10 @@
       </script> a theme by <a href="https://themefisher.com">themefisher.com</a></p>
   </div>
 </footer>
+
 <!-- /footer -->
+
+
 
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
