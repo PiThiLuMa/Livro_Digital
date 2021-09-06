@@ -5,5 +5,5 @@ integrantes :
 Thiago de Oliveira Freitas
 Luíza Pereira Silva
 Mariany Santos Bim
-Pierre Snatos Sousa
+Pierre Santos Sousa
 
