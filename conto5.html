@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Livros na web</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="../css/stylecontos.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+	<style>
+		.modal-container {
+		  width: 100%;
+		  height: 100%;
+		  background: rgba(0,0,0,.5);
+		  position: fixed;
+		  top: 0px;
+		  left: 0px;
+		  z-index: 1029;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+	
+		.modal-pop{
+		  background: white;
+		  width: auto;
+		  min-width: 300px;
+		  padding: 40px;
+		  border: 10px solid #451531;
+		  box-shadow: 0 0 0 10px white;
+		  position: relative;
+		  justify-content: center;
+		  align-items: center;
+		}
+	  
+		@keyframes aparecer {
+		  from {
+			opacity: 0;
+			transform: translate3D(0, -60px, 0);
+		  }
+	  
+		  to {
+			opacity: 1;
+			transform: translate3D(0, 0, 0);
+		  }
+		}
+	  
+		.mostrar .modal-pop {
+		  animation: aparecer .3s;
+		}
+	  
+		.fecharX {
+		  position: absolute;
+		  font-size: 1.2em;
+		  top: -40px;
+		  right: -40px;
+		  width: 70px;
+		  height: 70px;
+		  border-radius: 50%;
+		  border: 4px solid white;
+		  background: #451531;
+		  color: white;
+		  font-family: Arial, monospace;
+		  cursor: pointer;
+		  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+		}
+	</style>
+	<div id="livro1" class="modal-container">
+		<div class="modal-pop">
+			<a href="../portfolio.html"><button class="fecharX">voltar</button></a>
+		  <div class="book">
+			<input type="checkbox" id="c1">
+			<input type="checkbox" id="c2">
+			<input type="checkbox" id="c3">
+			<div id="cover"><img src="../images/imgcontos/1.jpg"></div>
+			<div class="flip-book">
+				<div class="flip" id="p1">
+					<div class="back">
+						<p> se tínhamos notícias 
+							da minha tia, porque até então, ela estava sumida desde a tarde e sem dar notícias a 
+							eles, e eles já estavam muito preocupados. E depois de terem ligado para o meu pai, 
+							eles ligaram para o meu outro tio e a partir daí todos nós ficamos muito preocupados 
+							porque já faziam horas que estávamos ligando e mandando mensagem para ela, e 
+							sempre caía na caixa postal e as mensagens não chegavam, e foi aí que eles decidiram 
+							começar a ligar para os hospitais da região do centro de São Paulo</p>
+							
+						<label class="back-btn" for="c1">Back</label>
+					</div>
+					<div class="front">
+						<h2>Mal entendidos </h2>
+						<p>
+							Em 2018, ocorreu uma situação muito preocupante, que foi cheia de confusão e no 
+							final foi só risada, essa história aconteceu com uma tia minha, que é umas das que eu 
+							mais gosto e quando se está com ela é impossível não se divertir e dar risada, ela nos 
+							diverte até em situações sérias. Bom, como eu ia dizendo, em uma noite de 2018 
+							minha prima e o meu tio nos ligaram desesperados perguntando
+							</p>
+						<label class="next-btn" for="c1">Next</label>
+					</div>
+				</div>
+				<div class="flip" id="p2">
+					<div class="back">
+						<p> ela não tinha sofrido nenhum acidente. 
+							 Depois de um tempo eles decidiram ligar para a polícia, e eles ligaram, mas como 
+							todos sabemos eles só constam desaparecimento depois de 24 horas, e aí o meu pai 
+							ficou mais preocupado ainda e decidiu ir lá para São Paulo, as 22:00 e detalhe, fica a 
+							uma hora de onde nós moramos. E por volta das 00:00 a minha tia chegou em casa 
+							como se nada tivesse acontecido e feliz da vida , e foi muito engraçado , porque 
+							enquanto estava todo mundo preocupado ligando para um monte de hospitais</p>
+						<label class="back-btn" for="c2">Back</label>
+					</div>
+					<div class="front">
+						<p>porque ela mora na 
+							Vila Mariana, bem perto do centro. E eu lembro até hoje dos milhares de telefonemas 
+							que o meu pai fez para os hospitais perguntando sempre a mesma coisa “Boa noite, eu 
+							gostaria de saber se alguém com o nome Leoneide deu entrada nesse hospital” e 
+							foram inúmeros telefonemas, do meu pai, dos meus tios, da minha prima e nada da 
+							minha tia. Mas por um lado, ela não estar em nenhum dos hospitais foi bom, porque 
+							isso significava que</p>
+						<label class="next-btn" for="c2">Next</label>
+					</div>
+				</div>
+				<div class="flip" id="p3">
+					<div class="back">
+						<p> E no fim o meu tio e a minha prima 
+							brigaram um monte com a minha tia, mas ao tempo todo mundo deu muita risada 
+							porque enquanto todos estavam preocupados, ela estava de boa no cinema, sozinha e 
+							relaxando, como se nada tivesse acontecido e até hoje nós contamos essa história na 
+							família e ela sempre rende altas risada.</p>
+						<label class="back-btn" for="c3">Back</label>
+					</div>
+					<div class="front">
+						<h2></h2>
+						<p>ela estava no cinema sozinha, assistindo “Minha mãe é uma peça “ e o celular dela estava 
+							descarregado e foi por isso que ela não avisou ninguém , mas antes de tudo isso o meu 
+							pai ainda tinha ido ver no Facebook dela se ela tinha postado alguma foto recente e 
+							ele descobriu que antes dela “sumir” , ela estava em um encontro de amigos e ele 
+							clicou no Facebook de cada um da foto e mandou mensagem para todos perguntando 
+							se eles sabiam onde ela estava , e ninguém sabia.
+							</p>
+						<label class="next-btn" for="c3">Next</label>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+</body>
+</html>

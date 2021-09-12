@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Livros na web</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="../css/stylecontos.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+	<style>
+		.modal-container {
+		  width: 100%;
+		  height: 100%;
+		  background: rgba(0,0,0,.5);
+		  position: fixed;
+		  top: 0px;
+		  left: 0px;
+		  z-index: 1029;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+	
+		.modal-pop{
+		  background: white;
+		  width: auto;
+		  min-width: 300px;
+		  padding: 40px;
+		  border: 10px solid #451531;
+		  box-shadow: 0 0 0 10px white;
+		  position: relative;
+		  justify-content: center;
+		  align-items: center;
+		}
+	  
+		@keyframes aparecer {
+		  from {
+			opacity: 0;
+			transform: translate3D(0, -60px, 0);
+		  }
+	  
+		  to {
+			opacity: 1;
+			transform: translate3D(0, 0, 0);
+		  }
+		}
+	  
+		.mostrar .modal-pop {
+		  animation: aparecer .3s;
+		}
+	  
+		.fecharX {
+		  position: absolute;
+		  font-size: 1.2em;
+		  top: -40px;
+		  right: -40px;
+		  width: 70px;
+		  height: 70px;
+		  border-radius: 50%;
+		  border: 4px solid white;
+		  background: #451531;
+		  color: white;
+		  font-family: Arial, monospace;
+		  cursor: pointer;
+		  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+		}
+	</style>
+	<div id="livro1" class="modal-container">
+		<div class="modal-pop">
+			<a href="../portfolio.html"><button class="fecharX">voltar</button></a>
+		  <div class="book">
+			<input type="checkbox" id="c1">
+			<input type="checkbox" id="c2">
+			<input type="checkbox" id="c3">
+			<div id="cover"><img src="../images/imgcontos/1.jpg"></div>
+			<div class="flip-book">
+				<div class="flip" id="p1">
+					<div class="back">
+						<p>
+							ao chegar lá avistei meu último ônibus que me levaria até em casa quase saindo, eu e 
+							meus amigos de viajem entramos em desespero por conta do nosso ônibus demorar 
+							cerca de uma hora até aparecer novamente no terminal, mas no meio do caminho 
+							conseguimos alcançar ele e entrar por conta do motorista humilde que parou para nós 
+							entrarmos.
+							Por enquanto ainda estava “tudo bem” pela viajem estar ocorrendo tudo normal, mas 
+							a quantidade de pessoas com um odor deselegante em um ônibus só, era anormal. 
+							</p>
+							
+						<label class="back-btn" for="c1">Back</label>
+					</div>
+					<div class="front">
+						<h2>Infortúnios da vida </h2>
+						<p>
+							Era uma tarde quase normal como qualquer outra, entre 18:20 e 19:00 estava eu 
+							voltando da escola com uma chuva tão grande que a dúvida entre esperar passar ou ir 
+							logo era a minha maior preocupação no momento. Mas a pressa para ir direto para 
+							casa falou mais alto e acabei indo no primeiro ônibus que me apareceu. 
+							O caminho até o terminal foi normal, nada de grande importância aconteceu, porém
+							</p>
+						<label class="next-btn" for="c1">Next</label>
+					</div>
+				</div>
+				<div class="flip" id="p2">
+					<div class="back">
+						<p> por conta do vento, eu corri de 
+							um jeito nunca antes visto tentando pegar a metade dele mas o vento estava muito 
+							forte e para meu infortúnio a parte de cima do guarda-chuva foi parar no fundo de um 
+							barranco e de uma maneira impossível de pegar. Então a primeira coisa que eu pensei 
+							foi em correr o mais rápido possível até chegar em casa e quando eu finalmente 
+							cheguei, eu junto de meus pertences e materiais estavam todos encharcados, porém 
+							eu finalmente estava no meu lar.</p>
+						<label class="back-btn" for="c2">Back</label>
+					</div>
+					<div class="front">
+						<p>Lembro vagamente do ônibus virando uma esquina e quase ocasionando na minha 
+							queda em cima de uma moça sentada, por conta do espaço mínimo que existia ali. 
+							 Quando finalmente chegou no meu ponto a chuva ainda caia incessantemente e com 
+							uma ventania surpreendente, preparei meu guarda-chuva pra enfrentar aquela 
+							grandiosa chuva e fui em direção até minha casa, mas no meio do caminho o pior 
+							aconteceu, metade do meu guarda-chuva saiu voando</p>
+						<label class="next-btn" for="c2">Next</label>
+					</div>
+				</div>
+				<div class="flip" id="p3">
+					<div class="back">
+						<label class="back-btn" for="c3">Back</label>
+					</div>
+					<div class="front">
+						<h2></h2>
+						<p>Após esse fatídico dia fiquei quase uma semana sem 
+							ir para a escola por conta do meu resfriado e materiais úmidos, e jurei para mim 
+							mesmo nunca mais esquecer dessa lamentável história
+							</p>
+						<label class="next-btn" for="c3">Next</label>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+</body>
+</html>
